@@ -21,3 +21,21 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# === Archivos de configuración privada ===
+.env
+*.env
+backend/.env
+frontend/.env
+
+# === Entornos virtuales de Python ===
+venv/
+backend/venv/
+__pycache__/
+
+# === Node / React ===
+node_modules/
+frontend/node_modules/
+
+# Otros archivos que no es necesario subir
+.DS_Store
