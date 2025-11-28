@@ -22,21 +22,37 @@
   background: #009fe3;
   color: white;
   border-radius: 1.5rem;
-  padding: 1.75rem 3rem;
-  text-align: center;
+  padding: 1.25rem 2.5rem;
   box-shadow: 0 14px 40px rgba(15, 23, 42, 0.25);
-  cursor: pointer; 
+  cursor: pointer; /* para el easter egg */
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.app-header h1 {
-  margin: 0 0 0.4rem 0;
+
+.header-logo {
+  height: 40px;        /* ajusta el tamaño del logo */
+  width: auto;
+  object-fit: contain;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.header-text h1 {
+  margin: 0;
   font-size: 2rem;
 }
 
-.app-header p {
+.header-text p {
   margin: 0;
   font-size: 0.95rem;
 }
+
 
 /* CONTENIDO PRINCIPAL */
 .layout {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import activaLogo from "./assets/Logo_Activa_1.png";
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -110,17 +111,26 @@ function App() {
   return (
     <div className="app">
       {}
-      <header
-        className="app-header"
-        onClick={handleHeaderClick}
-        title="Active Research Bot"
-      >
-        <h1>Active Research Bot</h1>
-        <p>
-          Asistente virtual para consultas sobre estudios de mercado y opinión
-          pública de Active Research.
-        </p>
-      </header>
+     <header
+  className="app-header"
+  onClick={handleHeaderClick}
+  title="Active Research Bot"
+>
+  <img
+    src={activaLogo}
+    alt="Logo Active Research"
+    className="header-logo"
+  />
+
+  <div className="header-text">
+    <h1>Active Research Bot</h1>
+    <p>
+      Asistente virtual para consultas sobre estudios de mercado y opinión
+      pública de Active Research.
+    </p>
+  </div>
+</header>
+
 
       {/* Contenido principal con información estática */}
       <main className="layout">
